@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Windows
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+
+# Archives (Framer kit source)
+*.zip
+
+# Node / build artifacts (if added later)
+node_modules/
+dist/
+build/

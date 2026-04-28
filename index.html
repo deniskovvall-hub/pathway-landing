@@ -14,14 +14,16 @@
     />
     <meta property="og:type" content="website" />
     <title>Pathway to productivity</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Dark bar -->
     <section class="bar">
       <div class="bar__container">
         <p class="bar__title">
-          This page is included in a free SaaS Website Kit.
+          <span class="bar__span">
+            This page is included in a free SaaS Website Kit.</span
+          >
           <a class="bar__link" href="#">
             View the complete Kit
             <svg class="bar__arrow" width="16" height="16" aria-hidden="true">
@@ -70,6 +72,12 @@
             </nav>
             <button type="button" class="header__button">Get for free</button>
           </div>
+          <button class="header__button-menu">
+            <svg class="" width="16" height="12" aria-hidden="true">
+              <use href="./image/sprite.svg#icon-header__burger"></use>
+            </svg>
+          </button>
+          <!-- burger -->
         </div>
       </div>
     </header>
@@ -142,14 +150,14 @@
             height="40"
           />
           <img
-            class="logo__item"
+            class="logo__item logo__item--echo"
             src="./image/Logo-company/echo-third-ava.png"
             alt="Echo"
             width="120"
             height="40"
           />
           <img
-            class="logo__item"
+            class="logo__item logo__item--celestia"
             src="./image/Logo-company/celestia-fourth-ava.png"
             alt="Celestia"
             width="120"
@@ -181,9 +189,17 @@
         <img
           class="effective__torus"
           src="./image/effective__torus.png"
+          loading="lazy"
           alt=""
           width="248"
           height="248"
+        />
+        <img
+          class="effective__pyramid"
+          src="./image/pyramid.png"
+          alt="pyramid"
+          width="146"
+          height="262"
         />
         <h2 class="effective__title">
           A more effective way to <span class="br">track progress</span>
@@ -196,6 +212,7 @@
         <img
           class="effective__img"
           src="./image/effective__app.png"
+          loading="lazy"
           alt="App screenshot"
           width="1100"
           height="682"
@@ -337,6 +354,7 @@
         </div>
       </div>
     </section>
+
     <section class="progress">
       <div class="container">
         <div class="progress__box">
@@ -737,7 +755,6 @@
         </div>
       </div>
     </section>
-
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">

@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+// Gradient section title — used across effective, stream, progress, testimonials, sign
+@mixin section-title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1.11;
+  letter-spacing: -0.06em;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  background: linear-gradient(180deg, #000000 0%, #001354 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

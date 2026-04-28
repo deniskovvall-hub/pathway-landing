@@ -1,0 +1,290 @@
+@use "../abstracts/variables" as *;
+
+.progress {
+  padding-bottom: 138px;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 28px;
+    margin: 0 auto 20px;
+    padding: 2px 13px;
+    border: 1px solid rgba(34, 34, 34, 0.1);
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  &__tag-text {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin: 0 auto 20px;
+    width: 376px;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    background: linear-gradient(180deg, #000000 0%, #001354 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    @media (min-width: $tablet) {
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 1.11;
+      letter-spacing: -0.06em;
+      margin: 0 auto 20px;
+      text-align: center;
+      width: 540px;
+
+      font-family: "DM Sans", sans-serif;
+      background: linear-gradient(180deg, #000000 0%, #001354 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    @media (min-width: $desktop) {
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 1.11;
+      letter-spacing: -0.06em;
+      margin: 0 auto 20px;
+      text-align: center;
+      font-family: "DM Sans", sans-serif;
+      background: linear-gradient(180deg, #000000 0%, #001354 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__text {
+    width: 373px;
+    margin: 0 auto;
+    color: var(--color-blue);
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+
+    @media (min-width: $tablet) {
+      letter-spacing: -0.036em;
+
+      width: 535px;
+      margin: 0 auto;
+      color: var(--color-blue);
+      text-align: center;
+      font-size: 22px;
+      line-height: 1.4;
+      margin-bottom: 60px;
+    }
+    @media (min-width: $desktop) {
+      width: 535px;
+      margin: 0 auto;
+      color: var(--color-blue);
+      text-align: center;
+      font-size: 22px;
+      line-height: 1.4;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    margin: 0 auto;
+    max-width: 500px;
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 26px;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+    @media (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 25px;
+      width: 1440px;
+      margin: 0 auto;
+    }
+  }
+
+  &__subscribe-box {
+    display: flex;
+  }
+
+  &__card {
+    width: 351px;
+    padding: 40px 40px 44px 40px;
+    border: 1px solid #eff0f6;
+    border-radius: 24px;
+
+    &--small {
+      height: 508px;
+    }
+
+    &--big {
+      height: 728px;
+    }
+
+    &--pro {
+      position: relative;
+      height: 603px;
+      background-color: var(--color-dark);
+      color: var(--color-white);
+
+      .progress__price {
+        margin-bottom: 34px;
+        color: var(--color-white);
+      }
+
+      .progress__time {
+        color: #b3b3b3;
+      }
+
+      .progress__points p {
+        color: var(--color-white);
+      }
+
+      .progress__points svg {
+        fill: var(--color-white);
+        stroke: currentColor;
+      }
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 38px;
+    }
+  }
+
+  &__free-subscribe {
+    margin-bottom: 0;
+    color: #6f6c90;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__price-box {
+    display: flex;
+    align-items: baseline;
+    margin-top: 34px;
+  }
+
+  &__price {
+    margin-bottom: 34px;
+    font-size: 54px;
+    font-weight: 700;
+  }
+
+  &__time {
+    color: #6f6c90;
+    font-size: 18px;
+  }
+
+  &__button {
+    margin-bottom: 44px;
+    padding: 10px 64px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-dark);
+    }
+
+    &--light {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 271px;
+      height: 39px;
+      margin-bottom: 34px;
+      background-color: var(--color-white);
+      color: var(--color-dark);
+      border-color: var(--color-white);
+      font-size: 16px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--color-white);
+        border-color: var(--color-white);
+      }
+    }
+
+    &--big {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 271px;
+      height: 39px;
+      margin-bottom: 34px;
+      background-color: var(--color-dark);
+      color: var(--color-white);
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: var(--color-white);
+        color: var(--color-dark);
+      }
+    }
+  }
+
+  &__points {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+
+  &__badge {
+    padding: 6px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background-image:
+      linear-gradient(var(--color-dark), var(--color-dark)),
+      linear-gradient(90deg, #dd7dff 0%, #e1cd86 50%, #8bcbf9 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background: linear-gradient(90deg, #dd7dff, #e1cd86, #8bcbf9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+  }
+}

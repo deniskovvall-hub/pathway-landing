@@ -1,0 +1,145 @@
+@use "../abstracts/variables" as *;
+
+.stream {
+  padding-bottom: 175px;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 28px;
+    margin: 0 auto 20px;
+    padding: 2px 13px;
+    border: 1px solid rgba(34, 34, 34, 0.1);
+    border-radius: 10px;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin: 0 auto 20px;
+    width: 376px;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    background: linear-gradient(180deg, #000000 0%, #001354 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    @media (min-width: $tablet) {
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 1.11;
+      letter-spacing: -0.06em;
+      margin: 0 auto 20px;
+      text-align: center;
+      width: 540px;
+
+      font-family: "DM Sans", sans-serif;
+      background: linear-gradient(180deg, #000000 0%, #001354 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    @media (min-width: $desktop) {
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 1.11;
+      letter-spacing: -0.06em;
+      margin: 0 auto 20px;
+      text-align: center;
+      font-family: "DM Sans", sans-serif;
+      background: linear-gradient(180deg, #000000 0%, #001354 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__text {
+    width: 373px;
+    margin: 0 auto;
+    color: var(--color-blue);
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+
+    @media (min-width: $tablet) {
+      letter-spacing: -0.036em;
+
+      width: 535px;
+      margin: 0 auto;
+      color: var(--color-blue);
+      text-align: center;
+      font-size: 22px;
+      line-height: 1.4;
+      margin-bottom: 60px;
+    }
+    @media (min-width: $desktop) {
+      width: 535px;
+      margin: 0 auto;
+      color: var(--color-blue);
+      text-align: center;
+      font-size: 22px;
+      line-height: 1.4;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    max-width: 500px;
+    @media (min-width: $tablet) {
+      margin: 0 auto;
+      gap: 20px;
+      max-width: 500px;
+    }
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-direction: row;
+      max-width: 1440px;
+    }
+  }
+  &__card {
+    width: 486px;
+    height: 538px;
+    padding: 40px 78px 170px 78px;
+    border: 1px solid rgba(34, 34, 34, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 7px 24px #1b1b1b14;
+
+    &-title {
+      color: var(--color-blue);
+      text-align: center;
+      font-family: "DM Sans", sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    &-text {
+      color: var(--color-blue);
+      text-align: center;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  &__cube {
+    width: 330px;
+    height: 330px;
+    margin: 0 auto;
+  }
+}

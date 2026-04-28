@@ -1,0 +1,72 @@
+:root {
+  --color-dark: #000000;
+  --color-blue: #010d3e;
+  --color-white: #ffffff;
+  --color-light: #eaeefe;
+  --color-gradient-end: #d2dcff;
+}
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+a,
+button,
+input,
+textarea,
+select,
+svg {
+  transition: all 0.2s ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: var(--color-white);
+}

@@ -1,0 +1,255 @@
+@use "../abstracts/variables" as *;
+
+@keyframes cylinder-fall {
+  from {
+    transform: translateY(-100vw);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes star-left {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes half-up {
+  from {
+    transform: translateY(100vw);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.pathway {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0 100px;
+  background: linear-gradient(201deg, var(--color-light) 45%, #183ec2 97%);
+
+  @media (min-width: $desktop) {
+    min-height: 710px;
+    padding: 130px 0;
+    overflow: visible;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    @media (min-width: $tablet) {
+      display: block;
+      width: 100%;
+      max-width: 1440px;
+      padding: 0 42px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      padding: 0 42px;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
+
+  &__box {
+    width: 100%;
+    max-width: 420px;
+    @media (min-width: $tablet) {
+      width: 100%;
+      max-width: 478px;
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 511px;
+    }
+  }
+
+  &__tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 137px;
+    height: 29px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(34, 34, 34, 0.1);
+    border-radius: 10px;
+
+    &-text {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    width: 511px;
+    font-size: 54px;
+    line-height: 1;
+    background: linear-gradient(180deg, #000000 0%, #001354 100%);
+    background-clip: text;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 29px;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+      width: 511px;
+      font-size: 90px;
+      line-height: 1;
+      background: linear-gradient(180deg, #000000 0%, #001354 100%);
+      background-clip: text;
+    }
+    @media (min-width: $desktop) {
+      margin-bottom: 29px;
+      font-size: 90px;
+      line-height: 1;
+      background: linear-gradient(180deg, #000000 0%, #001354 100%);
+      background-clip: text;
+      font-family: "DM Sans", sans-serif;
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    color: var(--color-blue);
+    font-size: 22px;
+    line-height: 1.4;
+    @media (min-width: $tablet) {
+      margin-bottom: 29px;
+      font-size: 22px;
+      line-height: 1.4;
+      letter-spacing: -0.036em;
+
+      max-width: 457px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 29px;
+      font-size: 22px;
+    }
+  }
+
+  &__button-container {
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 85px;
+    }
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 85px;
+    }
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 85px;
+    }
+  }
+
+  &__button {
+    padding: 10px 15px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border: solid 1px var(--color-dark);
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--color-dark);
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-dark);
+    font-size: 16px;
+    font-weight: 500;
+
+    &-arrow {
+      fill: var(--color-dark);
+    }
+  }
+
+  &__cylinder {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: 130px;
+      width: 140px;
+      height: auto;
+    }
+
+    @media (min-width: $desktop) {
+      top: 38px;
+      right: 564px;
+      width: 216px;
+      height: 197px;
+      animation: cylinder-fall 1s ease-out;
+    }
+  }
+
+  &__star {
+    display: block;
+    margin-top: 85px;
+    @media (min-width: $tablet) {
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: -240px;
+      z-index: 1;
+      width: 480px;
+      height: auto;
+      margin-top: 0px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 60px;
+      margin-top: 0px;
+      right: 0;
+      width: 650px;
+      animation: star-left 1s ease-out;
+    }
+  }
+
+  &__half {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: none;
+      position: absolute;
+      right: -30px;
+      bottom: -60px;
+      width: 160px;
+      height: auto;
+      z-index: 2;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      z-index: 200;
+      right: 10px;
+      bottom: -65px;
+      width: 230px;
+      height: 230px;
+      animation: half-up 1s ease-out;
+    }
+  }
+}

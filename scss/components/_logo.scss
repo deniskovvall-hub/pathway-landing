@@ -1,0 +1,110 @@
+@use "../abstracts/variables" as *;
+
+.logo {
+  padding: 50px 0 80px;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    padding: 50px 0 158px;
+  }
+  &__item--quantum {
+    opacity: 0.3;
+
+    @media (min-width: $tablet) {
+      width: 146px;
+
+      opacity: 0.3;
+    }
+    @media (min-width: $desktop) {
+      opacity: 0.6;
+    }
+  }
+  &__item--pulse {
+    display: none;
+    @media (min-width: $tablet) {
+      display: block;
+      width: 146px;
+
+      opacity: 0.3;
+    }
+    @media (min-width: $desktop) {
+      display: block;
+      opacity: 0.6;
+      width: 100px;
+    }
+  }
+
+  &__item--celestia {
+    opacity: 0.3;
+    @media (min-width: $tablet) {
+      display: block;
+      width: 146px;
+
+      opacity: 0.3;
+    }
+    @media (min-width: $desktop) {
+      opacity: 0.4;
+      display: block;
+      width: 115px;
+    }
+  }
+
+  &__item--echo {
+    opacity: 0.5;
+    @media (min-width: $tablet) {
+      display: block;
+      width: 146px;
+    }
+    @media (min-width: $desktop) {
+      opacity: 0.4;
+      width: 160px;
+    }
+  }
+  &__item--acme {
+    display: none;
+    @media (min-width: $tablet) {
+      display: block;
+      width: 146px;
+
+      opacity: 0.3;
+    }
+    @media (min-width: $desktop) {
+      opacity: 0.4;
+      display: block;
+
+      width: 146px;
+    }
+  }
+
+  &__item--apex {
+    display: none;
+    @media (min-width: $tablet) {
+      display: block;
+      width: 146px;
+      opacity: 0.1;
+    }
+    @media (min-width: $desktop) {
+      display: block;
+      opacity: 0.4;
+      width: 86px;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+    }
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 90px;
+      flex-wrap: nowrap;
+    }
+  }
+}

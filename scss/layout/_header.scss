@@ -1,0 +1,132 @@
+@use "../abstracts/variables" as *;
+
+.header {
+  padding: 20px 0;
+  background-color: var(--color-light);
+
+  &__nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-container {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__logo-made {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__logo-wrap {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      z-index: 0;
+      width: 40px;
+      height: 33px;
+      background: linear-gradient(
+        89.43deg,
+        #f87bff 0.48%,
+        #fb92cf 24.31%,
+        #ffdd9b 48.21%,
+        #c2f0b1 72.62%,
+        #2fd8fe 99.52%
+      );
+      filter: blur(11px);
+    }
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+
+    &-name {
+      display: none;
+      @media (min-width: $tablet) {
+        display: block;
+        font-size: 14px;
+      }
+      @media (min-width: $desktop) {
+        font-size: 14px;
+        display: block;
+      }
+    }
+    &-framer {
+      display: none;
+      @media (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      @media (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  }
+
+  &__controls {
+    display: none;
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+  &__nav-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__link {
+    color: var(--color-dark);
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  &__button {
+    padding: 10px 15px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border: solid 1px var(--color-dark);
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--color-dark);
+    }
+  }
+  &__button-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,170 @@
+@use "../abstracts/variables" as *;
+
+.sign {
+  position: relative;
+  overflow: hidden;
+  padding: 132px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #d2dcff 100%);
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin: 0 auto 20px;
+    width: 170px;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    background: linear-gradient(180deg, #000000 0%, #001354 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    @media (min-width: $tablet) {
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 1.11;
+      letter-spacing: -0.06em;
+      margin: 0 auto 20px;
+      text-align: center;
+      width: 540px;
+
+      font-family: "DM Sans", sans-serif;
+      background: linear-gradient(180deg, #000000 0%, #001354 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    @media (min-width: $desktop) {
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 1.11;
+      letter-spacing: -0.06em;
+      margin: 0 auto 20px;
+      text-align: center;
+      font-family: "DM Sans", sans-serif;
+      background: linear-gradient(180deg, #000000 0%, #001354 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    margin: 0 auto 24px;
+  }
+
+  &__text {
+    width: 280px;
+    margin: 0 auto;
+    color: var(--color-blue);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+
+    @media (min-width: $tablet) {
+      letter-spacing: -0.036em;
+
+      width: 535px;
+      margin: 0 auto;
+      color: var(--color-blue);
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.4;
+      margin-bottom: 40px;
+    }
+    @media (min-width: $desktop) {
+      width: 535px;
+      margin: 0 auto;
+      color: var(--color-blue);
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.4;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__button {
+    padding: 10px 15px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border: solid 1px var(--color-dark);
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--color-dark);
+    }
+
+    &-box {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-dark);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__arrow {
+    fill: var(--color-dark);
+  }
+
+  &__star {
+    display: none;
+    @media (min-width: $tablet) {
+      display: block;
+      position: absolute;
+      left: -180px;
+      top: -100px;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 80px;
+      z-index: 3;
+      width: 360px;
+      height: auto;
+      transform: translate(-20%, -50%);
+      pointer-events: none;
+    }
+  }
+  &__spring {
+    display: none;
+    @media (min-width: $tablet) {
+      display: block;
+      position: absolute;
+      left: 950px;
+      top: -30px;
+    }
+    @media (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      top: 140px;
+      left: 1000px;
+      z-index: 3;
+
+      width: 360px;
+      height: auto;
+      transform: translate(20%, -50%);
+      pointer-events: none;
+    }
+  }
+}

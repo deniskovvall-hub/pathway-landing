@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as *;
+@use "../base/reset" as *;
+
+.bar {
+  &__container {
+    height: 46px;
+    padding: 14px 16px;
+    background-color: var(--color-dark);
+  }
+
+  &__title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    display: block;
+  }
+
+  &__span {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-white);
+    font-family: "DM Sans";
+  }
+
+  &__arrow {
+    fill: var(--color-white);
+  }
+}

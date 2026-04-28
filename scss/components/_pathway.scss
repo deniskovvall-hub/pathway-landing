@@ -91,7 +91,8 @@
     margin-bottom: 24px;
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
-    width: 511px;
+    max-width: 511px;
+    width: 100%;
     font-size: 54px;
     line-height: 1;
     background: linear-gradient(180deg, #000000 0%, #001354 100%);
@@ -101,7 +102,7 @@
       margin-bottom: 29px;
       font-family: "DM Sans", sans-serif;
       font-weight: 700;
-      width: 511px;
+      max-width: 511px;
       font-size: 90px;
       line-height: 1;
       background: linear-gradient(180deg, #000000 0%, #001354 100%);

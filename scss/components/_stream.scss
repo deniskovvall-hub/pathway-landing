@@ -24,7 +24,8 @@
     line-height: 1;
     letter-spacing: -0.01em;
     margin: 0 auto 20px;
-    width: 376px;
+    max-width: 376px;
+    width: 100%;
     text-align: center;
     font-family: "DM Sans", sans-serif;
     background: linear-gradient(180deg, #000000 0%, #001354 100%);
@@ -38,7 +39,7 @@
       letter-spacing: -0.06em;
       margin: 0 auto 20px;
       text-align: center;
-      width: 540px;
+      max-width: 540px;
 
       font-family: "DM Sans", sans-serif;
       background: linear-gradient(180deg, #000000 0%, #001354 100%);
@@ -63,7 +64,8 @@
   }
 
   &__text {
-    width: 373px;
+    max-width: 373px;
+    width: 100%;
     margin: 0 auto;
     color: var(--color-blue);
     text-align: center;
@@ -74,7 +76,7 @@
     @media (min-width: $tablet) {
       letter-spacing: -0.036em;
 
-      width: 535px;
+      max-width: 535px;
       margin: 0 auto;
       color: var(--color-blue);
       text-align: center;
@@ -83,7 +85,7 @@
       margin-bottom: 60px;
     }
     @media (min-width: $desktop) {
-      width: 535px;
+      max-width: 535px;
       margin: 0 auto;
       color: var(--color-blue);
       text-align: center;
@@ -114,8 +116,9 @@
     }
   }
   &__card {
-    width: 486px;
-    height: 538px;
+    width: 100%;
+    max-width: 486px;
+    min-height: 538px;
     padding: 40px 78px 170px 78px;
     border: 1px solid rgba(34, 34, 34, 0.1);
     border-radius: 20px;

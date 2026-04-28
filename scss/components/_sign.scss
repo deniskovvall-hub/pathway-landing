@@ -17,7 +17,8 @@
     line-height: 1;
     letter-spacing: -0.01em;
     margin: 0 auto 20px;
-    width: 170px;
+    max-width: 280px;
+    width: 100%;
     text-align: center;
     font-family: "DM Sans", sans-serif;
     background: linear-gradient(180deg, #000000 0%, #001354 100%);
@@ -31,7 +32,7 @@
       letter-spacing: -0.06em;
       margin: 0 auto 20px;
       text-align: center;
-      width: 540px;
+      max-width: 540px;
 
       font-family: "DM Sans", sans-serif;
       background: linear-gradient(180deg, #000000 0%, #001354 100%);
@@ -57,7 +58,8 @@
   }
 
   &__text {
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
     margin: 0 auto;
     color: var(--color-blue);
     text-align: center;
@@ -68,7 +70,7 @@
     @media (min-width: $tablet) {
       letter-spacing: -0.036em;
 
-      width: 535px;
+      max-width: 535px;
       margin: 0 auto;
       color: var(--color-blue);
       text-align: center;
@@ -77,7 +79,7 @@
       margin-bottom: 40px;
     }
     @media (min-width: $desktop) {
-      width: 535px;
+      max-width: 535px;
       margin: 0 auto;
       color: var(--color-blue);
       text-align: center;

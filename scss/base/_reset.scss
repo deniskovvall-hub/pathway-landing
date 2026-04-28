@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 address {
   font-style: normal;
 }
